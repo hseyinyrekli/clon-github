@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Github Api OOP Project/style.css" />
+
+    <title>Github API OOP Project</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <div class="struct">
+      <div class="header">
+        <div class="profile">
+          <a href="/Github Api OOP Project/profile.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+              color="white"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="menu">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+              color="white"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="logo">
+          <a href="/Github Api OOP Project/index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+              color="white"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="middle">
+        <div id="shownInfos">
+          <!-- <div class="row">
+            <div class="col-md-4">
+              <a href="#">
+                <img
+                  id="avatar"
+                  src="https://avatars.githubusercontent.com/u/82841210?v=4"
+                  class="img-fluid m-4"
+                />
+              </a>
+              <div class="infos">
+                <button id="follow">
+                  Followers <span id="followers"></span>
+                </button>
+                <button id="follow">Follows <span id="follows"></span></button>
+                <button id="follow">Repos <span id="repos"></span></button>
+                <hr />
+                <div id="fullName"><strong>Hüseyin Yürekli</strong></div>
+                <hr />
+                <div id="bio">asdasdasdsad</div>
+                <br />
+              </div>
+            </div>
+            <div id="list" class="col-md-6">
+              <br />
+              <div class="list-group">
+                <li class="list-group-item borderzero">
+                  <img width="30px" />
+                  <span id="company">Company</span>
+                </li>
+                <br />
+                <li class="list-group-item borderzero">
+                  <img width="30px" />
+                  <span id="Location">Location</span>
+                </li>
+
+                <br />
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="footer2">
+        <div class="row" id="border">
+          <ul class="col">
+            <a href=""> <li>Blog</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Shop</li></a>
+            <a href=""><li>Contact Github</li></a>
+          </ul>
+          <ul class="col">
+            <a href=""><li>Pricing</li></a>
+            <a href=""><li>API</li></a>
+            <a href=""><li>Training</li></a>
+            <a href=""><li>Status</li></a>
+          </ul>
+          <ul class="col">
+            <a href=""><li>Security</li></a>
+            <a href=""><li>Terms</li></a>
+            <a href=""><li>Privacy</li></a>
+            <a href=""><li>Docs</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Github Api OOP Project/url.js"></script>
+    <script src="/Github Api OOP Project/profileApp.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
